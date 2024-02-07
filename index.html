@@ -57,10 +57,12 @@ let quotesArray = [
 
 let randomNumber = Math.floor(Math.random() * quotesArray.length); 
 
-document.getElementById('press-quote').textContent = quotesArray[randomNumber] 
+document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '”' + quotesArray[randomNumber].split(' — ')[1]
 // changed element of the press quote to a random number in the quotes array using a random number as the index selector
-</script>
 
+console.log(quotesArray[randomNumber].split(' — ')[0]);
+
+</script>
 
 </body>
 </html>
